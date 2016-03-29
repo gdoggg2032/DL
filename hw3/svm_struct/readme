@@ -1,0 +1,39 @@
+執行步驟：
+1. 於svm_struct_api_types.h 中修正TRAIN_EXAMPLES的值，ex:3696 for training, 592 for testing
+2 於主目錄下make
+
+training:
+3 ./svm_empty_learn -c C值 train_data_seq檔 output_model檔
+
+testing:
+4 ./svm_empty_classify test_data_seq檔 model檔 output_prediction檔
+
+google drive link: 
+https://drive.google.com/folderview?id=0B38vzoudhd1ZR2JHbGhROGdDNmM&usp=sharing
+
+輸出output_prediction檔為：
+依照frame排序，一行一個label, ex如下：
+23
+23
+23
+27
+27
+27
+27
+27
+27
+27
+27
+27
+32
+32
+32
+32
+.
+.
+.
+.
+
+每一個sequence的每個frame按照順序由上而下，並沒有特別說明sequence的編號。
+
+如有執行上疑問，請聯絡：b01902015@ntu.edu.tw

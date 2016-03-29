@@ -1,0 +1,31 @@
+uasage:
+
+use "THEANO_FLAGS='floatX=float32,device=gpu' python hw2.py > out" to run 
+
+Training data, test data, validation date should be change in the code to run the program
+
+#use PackDataToPKL.py to preprocessing data seqence into length of 100(path should be change in the code)
+
+-----------------------------------------------------------------------------------------
+
+line 283 Train data settings
+	TrainFile = "./train10.data.pkl"
+	LabelFile = "./train10.lab.pkl"
+	MapFile = "./48_39.map"
+
+line 336 Test data settings
+	TestFile = "SoftmaxTest.data.pkl"
+	AnsFile = "./SofmaxTest.ans"
+
+line 305 iteration setting
+	params = [Neuron_Distribution, 0.1, "ReLU", "cross entropy", 1000]
+
+-----------------------------------------------------------------------------------------
+
+#hw2.py will create a test label file called "SofmaxTest.ans"
+
+#then use map.py to generate formal formate for hw1(path should be change in the code)
+
+#then use smoothing.py to generate final formal formate for hw2(path should be change in the code)
+
+

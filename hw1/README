@@ -1,0 +1,33 @@
+uasage:
+
+use "THEANO_FLAGS='floatX=float32,device=gpu' python hw1.py > out" to run 
+
+Training data, test data, validation date should be change in the code to run the program
+
+-----------------------------------------------------------------------------------------
+
+line 196 Train data settings
+	TrainFile = "./Data/Train.data"
+	LabelFile = "./Data/Train.label"
+	MapFile = "./48_39.map"
+
+line 258 Test data settings
+	TestFile = "./MLDS/fbank/test.ark"
+	MapFile = "./48_39.map"
+	AnsFile = "Mtest.ans"
+
+line 285 Validation data settings
+	TrainFile = "./Data/validation_data_50000"
+	LabelFile = "./Data/validation_label_50000"
+	MapFile = "./48_39.map"
+
+line 228 iteration setting
+	Iterations = 100
+
+-----------------------------------------------------------------------------------------
+
+#hw.py will create a test label file called "Mtest.ans"
+
+#then use map.py to generate formal formate(path should be change in the code)
+
+
